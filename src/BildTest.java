@@ -4,7 +4,7 @@ public class BildTest {
         Bild bild = new Bild();
         bild.leseBild("java.pgm");
         bild.rotateBild();
-        bild.schreibeBild("srdsc/");
+        bild.schreibeBild("src/");
 
     }
 }
