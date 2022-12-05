@@ -1,7 +1,5 @@
-import java.io.IOException;
-
 public class BildTest {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         Bild bild = new Bild();
         bild.leseBild("java.pgm");

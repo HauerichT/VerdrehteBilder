@@ -3,7 +3,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.Arrays;
 
 public class Bild {
@@ -15,7 +14,7 @@ public class Bild {
     private int hoehe;
     private int maxHelligkeit;
 
-    public void leseBild(String dateiName) throws IOException {
+    public void leseBild(String dateiName) {
 
         Path path;
         String data = "";
@@ -64,7 +63,7 @@ public class Bild {
     }
 
 
-    public void schreibeBild(String verzeichnis) throws IOException {
+    public void schreibeBild(String verzeichnis){
 
         LocalDate date = LocalDate.now();
 
@@ -87,7 +86,7 @@ public class Bild {
         try {
             Files.writeString(path, gedrehteBilddatenString);
         } catch (IOException e) {
-            System.out.println();
+            System.out.println("Gedrehtes Bild konnte nicht in dem gegebenen Verzeichnis gespeichert werden!");
             e.printStackTrace();
         }
 
