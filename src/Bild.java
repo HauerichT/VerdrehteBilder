@@ -28,6 +28,7 @@ public class Bild {
             // speichert die Daten des Bildes
             daten = Files.readString(pfad);
         } catch (IOException e) {
+            e.printStackTrace();
             System.out.println("Die übergebene Datei existiert nicht!");
         }
 
