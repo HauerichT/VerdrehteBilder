@@ -28,8 +28,8 @@ public class Bild {
             // speichert die Daten des Bildes
             daten = Files.readString(pfad);
         } catch (IOException e) {
-            e.printStackTrace();
             System.out.println("Die übergebene Datei existiert nicht!");
+            e.printStackTrace();
         }
 
         // schreibt die Daten des Bildes, getrennt am Zeilenumbruch, in ein String Array
